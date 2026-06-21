@@ -119,6 +119,11 @@ function bindEvents() {
   document.getElementById("goToLogin").addEventListener("click", () => showScreen("loginScreen"));
   document.getElementById("signupToLogin").addEventListener("click", () => showScreen("loginScreen"));
   document.getElementById("loginToSignup").addEventListener("click", () => showScreen("signupScreen"));
+  // back buttons on inner screens
+  const backSignup = document.getElementById("backFromSignup");
+  if (backSignup) backSignup.addEventListener("click", () => showScreen("welcomeScreen"));
+  const backLogin = document.getElementById("backFromLogin");
+  if (backLogin) backLogin.addEventListener("click", () => showScreen("welcomeScreen"));
 
   document.getElementById("signupSubmit").addEventListener("click", () => {
     if (validateSignupForm()) {
