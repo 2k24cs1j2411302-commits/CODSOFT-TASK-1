@@ -218,6 +218,13 @@ button, input {
   height: 18px;
 }
 
+/* Slightly larger Google icon to match Twitter visual weight */
+.social-btn .google-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
 .social-btn span {
   font-size: 0.98rem;
   font-weight: 600;
